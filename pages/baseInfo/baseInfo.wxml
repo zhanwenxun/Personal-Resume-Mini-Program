@@ -1,0 +1,51 @@
+<view class="showInformationCardStyle">
+    <block wx:if="{{ !nullData }}">
+        <image src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1464798558,721042103&fm=173&app=25&f=JPEG?w=449&h=533&s=BFC87A2340B323BFDB801C82010060E1"></image>
+
+        <view style="float: left; width: 400rpx">
+            <text>姓名</text>
+            <view>占文勋</view>
+        </view>
+
+        <view style="float: left; width: 400rpx">
+            <text>性别</text>
+            <view>男</view>
+        </view>
+    
+        <view style="float: left; width: 400rpx">
+            <text>星座</text>
+            <view>处女座</view>
+        </view>
+    
+        <view>
+            <text>出生日期:</text>
+            <view>1998.09.21</view>
+        </view>
+    
+        <view>
+            <text>电子邮箱</text>
+            <view>952457763@qq.com</view>
+        </view>
+    
+        <view>
+            <text>获奖经历</text>
+            <view>大二学年获得了一等奖学金</view>
+        </view>
+    
+        <view>
+            <text>所在地</text>
+            <view>江西-南昌-新建县</view>
+        </view>
+
+        <view>
+            <text>性格特点</text>
+            <view>内敛、稳重、乐天派</view>
+        </view>
+
+        <view>
+            <text>擅长</text>
+            <view>长跑、学习、阅读</view>
+        </view>
+    </block>
+
+</view>

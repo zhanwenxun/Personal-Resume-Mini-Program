@@ -1,0 +1,36 @@
+page {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    background-image: url('http://img3.imgtn.bdimg.com/it/u=1739221638,3625506379&fm=26&gp=0.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+.main {
+  padding-top:270rpx;
+  align-items: center;
+  justify-content: center;  
+  width: 100%;
+  height: 100%;
+}
+
+button {
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    box-shadow: 10rpx 10rpx 10rpx #989898;
+    text-shadow: 0 0 10rpx #989898;
+    color: #2F2F2F;
+    margin-top: 30rpx;
+    border: 1px solid #ABABAB;
+    background: #fff;
+    border-radius: 30rpx; 
+}
+
+button::after{
+    border: none;
+    border-radius: 30rpx;
+}

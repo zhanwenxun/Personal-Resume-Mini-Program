@@ -1,0 +1,6 @@
+<view class='main'>
+  <button bindtap="toLikePhoto">喜爱的图片</button>
+  <button bindtap="toLikeMusic">喜爱的音乐</button>
+  <button bindtap="toLikeVideo">喜爱的视频</button>
+  <button bindtap='toHomePage'>个人页面</button>
+</view>

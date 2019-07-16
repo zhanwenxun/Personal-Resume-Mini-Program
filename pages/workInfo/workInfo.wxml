@@ -1,0 +1,40 @@
+<view class='weui-cell-third'>
+<block>
+<view class='weui-cell-list'>
+<view class='weui-cell-circle'></view>
+<view class='weui-cell-line'>
+<view class='weui-cell-time'>2004</view>
+<view class='weui-cell-name'>小学</view>
+<view class='weui-cell-event'>长虹小学</view>
+</view>
+
+<view class='weui-cell-circle'></view>
+<view class='weui-cell-line'>
+<view class='weui-cell-time'>2010</view>
+<view class='weui-cell-name'>初中</view>
+<view class='weui-cell-event'>九江三中</view>
+</view>
+
+<view class='weui-cell-circle'></view>
+<view class='weui-cell-line'>
+<view class='weui-cell-time'>2013</view>
+<view class='weui-cell-name'>高中</view>
+<view class='weui-cell-event'>九江一中</view>
+</view>
+
+<view class='weui-cell-circle'></view>
+<view class='weui-cell-line'>
+<view class='weui-cell-time'>2016</view>
+<view class='weui-cell-name'>大学</view>
+<view class='weui-cell-event'>南昌航空大学</view>
+</view>
+<view class='weui-cell-circle'></view>
+<view class='weui-cell-line'>
+<view class='weui-cell-time'>2020</view>
+<view class='weui-cell-name'>研究生</view>
+<view class='weui-cell-event'>......</view>
+</view>
+
+</view>
+</block>
+</view>

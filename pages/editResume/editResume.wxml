@@ -1,0 +1,134 @@
+<view class="editResumeStyle" style="height:{{windowHeight}}px;">
+    <!-- <view class="editResumeStyle" bind:touchstart="handleTouchstart" bind:touchmove="handleTouchmove" bind:touchend="handleTouchend"> -->
+    <swiper class="swiperStyle" indicator-dots>
+        <swiper-item>
+            <view class="infoCardStyle baseInfoCard">
+                <form bindsubmit="handleBaseFormSubmit" bindreset="handleBaseFormReset">
+                    <view class="textInputStyle">
+                        <text>姓名</text>
+                        <input name="userName" value="{{ baseInfo.userName }}" placeholder="请编辑信息" />
+                    </view>
+
+                    <view>
+                        <text>性别</text>
+                        <radio-group name="userGender" class="radioGroupStyle">
+                            <label>
+                                <radio name="girl" value="0" checked="{{ baseInfo.userGender === 0 }}" />男
+                                <radio name="boy" value="1" checked="{{ baseInfo.userGender === 1 }}" />女
+                                <radio name="unknow" value="2" checked="{{ baseInfo.userGender === 2 }}" />未知
+                            </label>
+                        </radio-group>
+                    </view>
+
+                    <view class="textInputStyle">
+                        <text>星座</text>
+                        <input name="job" value="{{ baseInfo.job }}"  placeholder="请编辑信息" />
+                    </view>
+
+                    <view>
+                        <text>出生日期</text>
+                        <picker mode="date" start="1500-01-01" end="2018-06-06" bindchange="handleDateChange">
+                            <input name="birthData" disabled value="{{ baseInfo.birthData }}"  placeholder="请编辑信息"></input>
+                        </picker>
+                    </view>
+
+
+                    <view class="textInputStyle">
+                        <text>电子邮箱</text>
+                        <input name="eMail" value="{{ baseInfo.eMail }}"  placeholder="请编辑信息" />
+                    </view>
+
+                    <view class="textInputStyle">
+                        <text>手机号码</text>
+                        <input bindinput="handlePhoneNumber" type="number" maxlength="11" name="phoneNumber" value="{{ baseInfo.phoneNumber }}"  placeholder="请编辑信息" />
+                    </view>
+
+                    <view class="textInputStyle">
+                        <text>所在地</text>
+                        <input name="address" value="{{ baseInfo.address }}"  placeholder="请编辑信息" />
+                    </view>
+
+                    <view class="textInputStyle">
+                        <text>性格</text>
+                        <input name="quality" value="{{ baseInfo.quality }}"  placeholder="请编辑信息" />
+                    </view>
+
+                    <view class="formButtomStyle">
+                        <button class="comButtonStyle" form-type="reset">重置</button>
+                        <button class="comButtonStyle" form-type="submit" disabled="{{ !canBaseSubmit }}">保存</button>
+                    </view>
+                </form>
+            </view>
+        </swiper-item>
+
+        <swiper-item>
+            <showworkdialog wx:if="{{ !hideWorkDialog }}" singleWorkInfo="{{ singleWorkInfo }}" bind:findworkInfoDialog="findworkInfo" bind:closeDialog="_closeDialog"></showworkdialog>
+            <view class="infoCardStyle workInfoCard">
+                <block wx:for="{{ workInfo }}" wx:key="{{ index }}">
+
+                    <view class="workCard" wx:if="{{ item.id }}" data-single-work-info="{{ index }}" bind:tap="handleWorkInfoCardTap">
+                        <view>
+                            <text>小学</text>
+                            <text name="companyName">{{ item.companyName || '' }}</text>
+                        </view>
+                        <view>
+                            <text>初中</text>
+                            <text name="companyAddress">{{ item.companyAddress || '' }}</text>
+                        </view>
+                        <view>
+                            <text>高中</text>
+                            <text name="datesEmployed">{{ item.datesEmployed || '' }}</text>
+                        </view>
+                        <view>
+                            <text>大学</text>
+                            <text name="employedProfession">{{ item.employedProfession || '' }}</text>
+                        </view>
+                        <view class="deleteWorkCard" catch:tap="deleteCard" data-card-id="{{ item.id }}">
+                            <icon  color="white" type="cancel" size="25"></icon>
+                        </view>
+                    </view>
+
+                    <view class="workCard noInformationStyle" wx:if="{{ !item.id }}" bind:tap="handleWorkInfoCardTap">
+                        请点击添加您的学习经历
+                    </view>
+                </block>
+            </view>
+        </swiper-item>
+
+        <swiper-item>
+            <view class="infoCardStyle otherInfoCard">
+                <form bindsubmit="handleOtherFormSubmit">
+                    <view wx:for="{{ otherInfo }}" wx:key="{{ index }}" class="otherInfoCardStyle">
+                        <view class="otherInfoTitleStyle">
+                            <button data-operational-data-index="{{ index }}" catch:tap="handleDeleteInfo">-</button>
+                            <input data-operational-data-index="{{ index }}" name="title{{index}}" value="{{ item['title' + index] }}" bindinput="hangdleTitleBindinput" maxlength="8" placeholder="请输入标题" />
+                            <button data-operational-data-index="{{ index }}" catch:tap="handleAddInfo">+</button>
+                        </view>
+                        <input data-operational-data-index="{{ index }}" style="display: none;" name="content{{index}}" value="{{ item['content' + index] }}" />
+                        <view  data-operational-data-index="{{ index }}" class="viewContentStyle" catch:tap="showDialog">{{ item['content' + index] }}</view>
+                    </view>
+                    <button class="comButtonStyle" form-type="submit" disabled="{{ !canOtherSubmit }}">submit</button>
+                </form>
+            </view>
+        </swiper-item>
+        <!-- <swiper-item>
+            <text style="width: 200rpx;height: 200rpx;background:red;"></text>
+        </swiper-item> -->
+    </swiper>
+    <view class="workDialogStyle" wx:if="{{ showDialog }}">
+
+        <view class="formAreaStyle">
+            <form bindsubmit="handleTextareaSubmit">
+                <textarea maxlength="200" name="editContent" value="{{ textareaContent }}" placeholder="请编辑信息" auto-height>
+                    
+                </textarea>
+                <view class="bottonStyle">
+                    <button catch:tap="closeDialog">cancel</button>
+                    <button catch:tap="resetContent">reset</button>
+                    <button form-type="submit">save</button>
+                </view>
+            </form>
+        </view>
+    
+    </view>
+</view>

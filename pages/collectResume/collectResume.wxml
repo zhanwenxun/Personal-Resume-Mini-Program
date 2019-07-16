@@ -1,0 +1,9 @@
+<view>
+    <view class="headerStyle">收藏的简历 <text class="textStyle">{{ collectResume.length }}</text>/份</view>
+
+    <lookresume
+         resumeInfo="{{ collectResume }}"
+         bind:handleDelete="handleCancelCollection"
+    >
+    </lookresume>
+</view>

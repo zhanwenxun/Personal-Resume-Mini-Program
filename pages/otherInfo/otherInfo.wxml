@@ -1,0 +1,20 @@
+<view class="otherInfoStyle showInformationCardStyle">
+    <block wx:for="{{ otherInfo }}" wx:key="{{ index }}">
+        <view>
+            <text>First Dream</text>
+            <view>考上斯坦福大学的研究生</view>
+        </view>
+        <view>
+            <text>Second Dream</text>
+            <view>创立自己的电脑公司</view>
+        </view>
+        <view>
+            <text>Third Dream</text>
+            <view>建立某某公益机构</view>
+        </view>
+
+        <text style="font-size:25px; font-family: '楷体';">
+        希望自己早年在中国成长，中年在美国工作，晚年在欧洲养老。
+        </text>
+    </block>
+</view>

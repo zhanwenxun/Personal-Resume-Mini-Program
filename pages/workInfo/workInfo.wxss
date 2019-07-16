@@ -1,0 +1,44 @@
+page {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    background-image: url('http://img17.3lian.com/d/file/201702/09/9ce439e46ee4f10dbfeb5beac993c7ad.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+.weui-cell-list{
+  margin: 5px 50px 5px 50px;
+}
+.weui-cell-line{
+/* width: 100px; */
+margin-left: 5px;
+  border-left: 1px solid #fff;
+  height: 100px; 
+}
+.weui-cell-circle{
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  border-color: blue;
+}
+.weui-cell-time{
+  /* width: 50px; */
+  float: left;
+  font-size:20px;
+  padding-left: 15px;
+  width: 72px;
+ 
+}
+.weui-cell-event{
+ 
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.weui-cell-name{
+font-size:14px;
+height:25px;
+margin-left: 70px; 
+}

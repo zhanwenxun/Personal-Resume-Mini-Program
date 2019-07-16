@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "homepagebtn": "../../components/homePage/homePage"
+    }
+}

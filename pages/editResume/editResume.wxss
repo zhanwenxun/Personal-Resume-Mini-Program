@@ -1,0 +1,168 @@
+@import "../../components/workDialog/workDialog.wxss";
+
+.editResumeStyle {
+    /*  height is defined in inline style, windowHeight */
+    width: 100%;
+}
+.swiperStyle {
+    width: 100%;  
+    height: 100%;
+}
+
+.infoCardStyle {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.baseInfoCard {
+    font-size: 30rpx;
+    text-align: center;
+}
+.baseInfoCard view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10rpx;
+    margin: 10px;
+    padding: 10rpx;
+}
+.baseInfoCard view text:nth-child(1){
+    border-bottom: 1px solid gray;
+    padding-bottom: 10rpx;
+    font-weight: 700;
+}
+.baseInfoCard view input:nth-child(2), .baseInfoCard view picker:nth-child(2) {
+    width: 100%;
+}
+.baseInfoCard view .radioGroupStyle radio .wx-radio-input {
+    border-radius: 50%;
+    width: 30rpx;
+    height: 30rpx;
+ }
+ /* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+ .baseInfoCard view .radioGroupStyle radio .wx-radio-input.wx-radio-input-checked::before {
+    border-radius: 50%;
+    width: 25rpx;
+    height: 25rpx;
+    line-height: 25rpx;
+    text-align: center;
+    font-size: 20rpx;
+    color:#fff;
+ }
+ /* button style */
+ .baseInfoCard .formButtomStyle {
+    border: none;
+    display: flex;
+    flex-direction: row;
+ }
+ .baseInfoCard .formButtomStyle button {
+    width: 30%;
+ }
+
+.textInputStyle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: nowrap;
+}
+
+.otherInfoCard {
+    width: 100%;
+    margin-top: 20rpx;
+}
+
+.otherInfoCard .otherInfoCardStyle {
+    min-height: 80rpx;
+    border: 1px solid #ABABAB;
+    width: 94%;
+    margin: 3%;
+    box-shadow: 0rpx 0rpx 10rpx #989898;
+    border-radius: 10rpx;
+}
+.otherInfoCard .otherInfoTitleStyle {
+    width: 80%;
+    height: 60rpx;
+    margin-left: 10%;
+    /* background: pink; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 10rpx;
+    padding-top: 10rpx;
+}
+.otherInfoCard .otherInfoTitleStyle input {
+    flex: 1;
+    word-break: break-all;
+    border-bottom: 1px solid #ABABAB;
+    text-align: center;
+    font-weight: 700;
+}
+.otherInfoCard .viewContentStyle {
+    /* background: #fff; */
+    height: 100%;
+    min-height: 60rpx;
+    padding-left: 5rpx;
+    flex: 1;
+    word-break: break-all;
+    text-align: center;
+    padding: 10rpx;
+    font-size: 30rpx;
+}
+.otherInfoCard .otherInfoTitleStyle button {
+    width: 50rpx;
+    height: 50rpx;
+    line-height: 48rpx;
+    color: gray;
+    font-size: 50rpx;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    box-shadow: 0rpx 0rpx 10rpx #989898;
+    border: 1px solid gray;
+}
+.otherInfoCard .otherInfoTitleStyle button::after {
+    border: none;
+    border-radius: none;
+}
+.workCard {
+    position: relative;
+}
+.deleteWorkCard { /* must have width and height, it's used to delete card */
+    width: 25px!important;
+    height: 25px!important;
+    background: #A2A2A2;
+    border-radius: 50%;
+    position: absolute;
+    right: -15rpx;
+    bottom: -15rpx;
+}
+.noInformationStyle {
+    text-align: center;
+    line-height: 200rpx;
+    text-shadow: 0 0 10rpx #989898;
+}
+.formAreaStyle {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+.formAreaStyle textarea {
+    min-height: 200rpx;
+    width: 90%;
+    font-size: 30rpx;
+    padding: 10rpx;
+    margin: 3%;
+    border-radius: 10rpx;
+    box-shadow: 0rpx 0rpx 10rpx #989898;
+    border: 1px solid #ABABAB;
+}
+.formAreaStyle .bottonStyle button {
+    box-shadow: 0rpx 0rpx 10rpx #989898;
+}
+

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/likeInfo/likeInfo",
+    "pages/LikePhoto",
+    "pages/LikeMusic/LikeMusic",
+    "pages/LikeVideo/LikeVideo",
+    "pages/lookResume/lookResume",
+    "pages/baseInfo/baseInfo",
+    "pages/workInfo/workInfo",
+    "pages/otherInfo/otherInfo",
+    "pages/editResume/editResume",
+    "pages/myCenter/myCenter",
+    "pages/collectResume/collectResume",
+    "pages/recentlyViewed/recentlyViewed"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#A2A2A2",
+    "navigationBarBackgroundColor": "#A2A2A2"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#fff",
+    "backgroundColor": "#A2A2A2",
+    "borderStyle": "dark",
+    "list": [
+      {
+        "pagePath": "pages/lookResume/lookResume",
+        "text": "查看预览",
+        "iconPath": "images/img3.png",
+        "selectedIconPath": "images/img1.png"
+      },
+      {
+        "pagePath": "pages/myCenter/myCenter",
+        "text": "我的中心",
+        "iconPath": "images/img3.png",
+        "selectedIconPath": "images/img1.png"
+      }
+    ]
+  },
+  "debug": true
+}

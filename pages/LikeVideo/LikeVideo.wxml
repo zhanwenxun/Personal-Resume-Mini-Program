@@ -1,0 +1,8 @@
+
+ <video id="myVideo" src="http://gslb.miaopai.com/stream/BCsFocYE~w~BsevpijXubgLccKPhex6ZTpFeyQ__.mp4?vend=miaopai&ssig=5e9cfe4addadc2343b49763bdbad1741&time_stamp=1546915918673&mpflag=32"   enable-danmu danmu-btn controls></video>
+  <view class="btn-area">
+    <input class = "danmuText" bindblur="bindInputBlur" placeholder="请输入要发送的弹幕"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+    <button class = "saveButton" bindtap="savePosition">跳转到50s播放</button>
+ 
+  </view>

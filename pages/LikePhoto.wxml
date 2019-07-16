@@ -1,0 +1,6 @@
+<view>
+    <image style='width: 300px; height:150px' src='../images/photo1.jpeg' mode='scaleToFill'></image>
+    <image style='width: 300px; height:150px' src='../images/photo2.jpeg' mode='widthFix'></image>
+    <image style='width: 300px; height:150px' src='../images/photo3.jpeg' mode='aspectFill'></image>
+    <image style='width: 300px; height:150px' src='../images/photo4.jpeg' mode='aspectFit'></image>
+</view>

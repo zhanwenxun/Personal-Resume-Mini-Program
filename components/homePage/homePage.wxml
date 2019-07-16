@@ -1,0 +1,11 @@
+<view class="homePage">
+    <view class="titleStyle">
+        <view class="imageStyle">
+            <image mode="aspectFill" src="../../images/icon.jpg"></image>
+        </view>
+        <view class="userNameStyle">Whiplash</view>
+    </view>
+    <button catch:tap="_baseInfoTap">个人信息</button>
+    <button catch:tap="_workInfoTap">学习经历</button>
+    <button catch:tap="_otherInfoTap">梦想未来</button>
+</view>

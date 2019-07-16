@@ -1,0 +1,14 @@
+@import "../../components/lookResume/lookResume.wxss";
+
+.headerStyle {
+    /* background: greenyellow; */
+    margin: 30rpx;
+    color: #979797;
+    font-size: 30rpx;
+}
+.textStyle {
+    color: gray;
+    font-weight: 700;
+    margin-left: 10rpx;
+    margin-right: 5rpx;
+}

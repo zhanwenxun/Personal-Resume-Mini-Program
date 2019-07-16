@@ -1,0 +1,118 @@
+/**app.wxss**/
+
+page {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    background: #F2F2F2;
+    font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,Arial,sans-serif;
+    background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545997788&di=fb18c080d605e41eecde3c3783dd5d66&imgtype=jpg&er=1&src=http%3A%2F%2Ffile.popoho.com%2Fqqtn%2F20160614%2F2015091617342657317nr43pfnutww.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+.workCard {
+    height: 200rpx;
+    padding-left: 10rpx;
+    font-size: 30rpx;
+    box-shadow: 5rpx 5rpx 10rpx gray;
+    border-radius: 10rpx;
+    margin: 30rpx;
+    background: #fff;
+}
+
+.workCard view {
+    width: 100%;
+    height: 50rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.workCard view text:nth-child(1) {
+    font-weight: 700;
+    padding: 10rpx;
+}
+.workCard view text:nth-child(2) {
+    padding-right: 10rpx;
+}
+
+.ellipsisText {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.comButtonStyle {
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    box-shadow: 10rpx 10rpx 10rpx #989898;
+    text-shadow: 0 0 10rpx #989898;
+    color: #2F2F2F;
+    margin-top: 30rpx;
+    margin-bottom: 100rpx;
+    border: 1px solid #ABABAB;
+    background: #fff;
+}
+
+.showInformationStyle {
+    margin: 10rpx;
+    border: 1px solid #BCBCBC;
+    border-radius: 10rpx;
+    background: #fff;
+}
+.showInformationStyle view {
+    margin: 10rpx;
+    display: flex;
+    flex-direction: row;
+    font-size: 30rpx;
+}
+.showInformationStyle view text {
+    font-weight: 700;
+}
+
+/* baseInfo otherInfo style */
+.showInformationCardStyle {
+    font-size: 30rpx;
+    text-align: center;
+    width: 100%;
+}
+.showInformationCardStyle > view {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10rpx;
+    margin: 3%;
+}
+.showInformationCardStyle > view text{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10rpx;
+    font-weight: 700;
+}
+.showInformationCardStyle>view view{
+    height: 100%;
+    min-height: 40rpx;
+    flex: 1;
+    word-break: break-all;
+    padding: 5rpx;
+}
+
+.showInformationCardStyle .nullDataStyle {
+    width: 200rpx;
+    height: 200rpx;
+    line-height: 200rpx;
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50%;
+    font-size: 40rpx;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+}
+
